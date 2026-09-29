@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Figures | Collectable Hero Gallery</title>
+    <meta name="description" content="Discover premium action figures, collectibles, and display-ready pieces for collectors and fans." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div>
+            <p class="brand-name">Action Figures</p>
+            <span class="brand-tag">Collect every moment</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#features">Why Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.96 12.72l4.39 4.39 1.41-1.41-4.39-4.39A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="icon-btn cart-toggle" aria-label="Open cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h14.05l-1.83 7.05a2 2 0 01-1.98 1.6H9.28a2 2 0 01-1.98-1.6L5.2 3H2V1h4.2l.68 3.2H20v2H7.18l.42 2z"/></svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero hero-figures">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Premium collectibles</p>
+            <h1>Bring home your favorite heroes.</h1>
+            <p class="subtext">
+              Explore cinematic action figures, deluxe statues, and display-worthy collectibles built for fans who love detail, power, and style.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop now</a>
+              <a class="btn btn-secondary" href="#collections">Browse drops</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Store statistics">
+              <li><strong>20k+</strong><span>collectors</span></li>
+              <li><strong>4.9/5</strong><span>rating</span></li>
+              <li><strong>48h</strong><span>dispatch</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured product display">
+            <div class="badge badge-top">Limited drop</div>
+            <div class="main-image-card">
+              <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Collector display statue" />
+            </div>
+            <div class="mini-card mini-card-left">
+              <span>New arrival</span>
+              <strong>Iron Titan</strong>
+            </div>
+            <div class="mini-card mini-card-right">
+              <span>From</span>
+              <strong>$89</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands-bar">
+        <div class="container brands-inner">
+          <span>HeroVerse</span>
+          <span>PixelForge</span>
+          <span>StormCollect</span>
+          <span>Mythic Labs</span>
+          <span>GigaWorks</span>
+        </div>
+      </section>
+
+      <section class="featured-products" id="shop">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Top picks</p>
+              <h2>Collector favorites</h2>
+            </div>
+            <a href="#" class="text-link">View all figures</a>
+          </div>
+
+          <div class="category-filters" aria-label="Categories">
+            <button class="filter-btn is-active" data-category="all">All</button>
+            <button class="filter-btn" data-category="heroes">Heroes</button>
+            <button class="filter-btn" data-category="sci-fi">Sci-Fi</button>
+            <button class="filter-btn" data-category="anime">Anime</button>
+            <button class="filter-btn" data-category="display">Display</button>
+          </div>
+
+          <div class="product-grid" id="product-grid"></div>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Shop by vibe</p>
+              <h2>Featured collections</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <article class="collection-card collection-featured">
+              <div>
+                <p>Legendary</p>
+                <h3>Superhero Icons</h3>
+              </div>
+              <a href="#shop">Shop now</a>
+            </article>
+            <article class="collection-card collection-card-2">
+              <div>
+                <p>Future worlds</p>
+                <h3>Sci-Fi Units</h3>
+              </div>
+              <a href="#shop">Shop now</a>
+            </article>
+            <article class="collection-card collection-card-3">
+              <div>
+                <p>Collector shelves</p>
+                <h3>Display Ready</h3>
+              </div>
+              <a href="#shop">Shop now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow">Why fans choose us</p>
+            <h2>Premium craftsmanship. Real collector energy.</h2>
+            <p>
+              We curate high-detail collectibles with premium finishes, secure packaging, and limited-run releases for fans who want standout pieces on their shelves.
+            </p>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">01</div>
+              <div>
+                <h3>Authentic drops</h3>
+                <p>Exclusive, licensed releases that are hard to find elsewhere.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">02</div>
+              <div>
+                <h3>Collector quality</h3>
+                <p>Detailed sculpting, premium materials, and display-ready finishes.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">03</div>
+              <div>
+                <h3>Secure shipping</h3>
+                <p>Carefully packed orders delivered safely to your shelf.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="container newsletter-box">
+          <div>
+            <p class="eyebrow">Stay in the loop</p>
+            <h2>Get alerts for new drops and collector deals.</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-live="polite" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button class="close-cart" aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cart-total">$0.00</strong>
+        </div>
+        <button class="btn btn-primary btn-block">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="brand-name">Action Figures</p>
+          <p class="footer-copy">Collecting legends, one shelf at a time.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
